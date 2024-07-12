@@ -1,0 +1,99 @@
+@charset "utf-8";
+*{margin: 0; padding: 0;}
+ul,li,ol{list-style: none;}
+a{text-decoration: none; color: inherit;}
+
+html,body{height: 100%;}
+
+body{
+    background-color: #f1f1f1;
+}
+
+.wrap{}
+
+#header{
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    z-index: 100;
+}
+
+.nav, .fix_nav{
+    position: absolute;
+    left: 0; 
+    top: 0;
+    height: 100px;
+    width: 100%;
+    background-color: rgba(245, 245, 220, 0.73);
+    transition: all 0.3s;
+}
+
+.nav{background-color: burlywood;}
+.nav.on{top: -100px !important;}
+
+.fix_nav{top: -100px !important;}
+.fix_nav.on{top: 0 !important;}
+
+.nav ul, .fix_nav ul{
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    margin: 0 auto;
+    
+}
+
+.nav ul li, .fix_nav ul li{}
+
+.nav ul li a, .fix_nav ul li a{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.container{
+    position: fixed;
+    top: 0;
+}
+
+.container .page{
+    width: 100vw;
+    height: 100vh;
+    padding: 150px;
+    box-sizing: border-box;
+    border: 5px solid rgb(161, 111, 45);
+}
+
+.container .page h1{
+    font-size: 100px;
+}
+
+.btn_group{
+    position: fixed;
+    top: 150px;
+    right: 20px;
+}
+
+.btn_group ul{}
+
+.btn_group ul li{
+    margin-bottom: 20px;
+}
+
+.btn_group ul li a{
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: lightsalmon;
+    text-indent: -9999px;
+}
+
+.btn_group ul li.on a{
+    background-color: brown;
+}
+
+
+
+
+

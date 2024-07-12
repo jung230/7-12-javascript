@@ -1,0 +1,72 @@
+@charset "utf-8";
+
+*{margin: 0; padding: 0; /* box-sizing: border-box; */}
+ul,li,ol{list-style: none;}
+a{text-decoration: none; color: inherit;}
+
+body{
+    background-color: #ddd;
+    color: #999;
+}
+
+
+.wrap{
+    width: 800px;
+    margin: 0 auto;
+    box-shadow: 0 50px 10px #999;
+    /* box-shadow: 0(x축) 50px(y축) 10px(블러) #999; */
+}
+
+.logo{}
+
+.ninja{}
+
+.ninja .tt{
+    background-color: white;
+    position: relative;
+}
+
+.ninja .tt img{
+    position: absolute;
+    bottom: 0; 
+    left: -100px;
+    display: none; /* = 가능 opacity: 0; */
+    
+}
+
+.ninja .tt h2{
+    height: 60px;
+    background-color: #f1f1f1;
+    line-height: 60px;
+    text-align: right;
+    padding: 0 20px;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+    background-image: url(../img/sprite.png);
+    background-repeat: no-repeat;
+}
+
+.ninja .tt h2.on{
+    background-position: left bottom;
+}
+
+.ninja .tt h2:hover{background-color: white;}
+
+.ninja .tt p{
+    padding: 20px 20px 20px 350px;
+    text-align: right;
+    line-height: 1.7;
+    display: none;
+}
+
+.ninja .blue h2.on{color: blue;}
+
+.ninja .purple h2.on{color: purple;}
+
+.ninja .red h2.on{color: red;}
+
+.ninja .green h2.on{color: green;}
+
+
+
+
